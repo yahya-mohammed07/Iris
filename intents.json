@@ -1,0 +1,733 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "What's up",
+        "Hey",
+        "What's good",
+        "What's new",
+        "What's going on",
+        "What's happening",
+        "Greetings"
+      ],
+      "responses": [
+        "Hello, thanks for visiting!",
+        "Good to see you again!",
+        "Hi there, how can I help?",
+        "Hello, what brings you here today?",
+        "Hi, how may I assist you?",
+        "Greetings, how can I help?",
+        "Hello, how can I be of service?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "by",
+        "byy",
+        "See you later",
+        "Goodbye",
+        "Good bye",
+        "See you soon",
+        "Farewell",
+        "Adios",
+        "Later",
+        "Ciao"
+      ],
+      "responses": [
+        "See you later, have a great day!",
+        "Goodbye! Come back again soon.",
+        "Farewell! Have a fantastic day.",
+        "Adios! Take care.",
+        "See you soon, take care!",
+        "Later! Have a great day.",
+        "Ciao! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "thx",
+        "Thank you",
+        "Thanks a lot",
+        "Many thanks",
+        "I really appreciate it",
+        "You're a lifesaver",
+        "Gracias"
+      ],
+      "responses": [
+        "You're welcome!",
+        "No problem!",
+        "My pleasure!",
+        "Any time!",
+        "I'm glad I could help!",
+        "It was nothing, happy to help!",
+        "De nada! (That's Spanish for 'You're welcome')"
+      ]
+    },
+    {
+      "tag": "BMR_Information",
+      "patterns": [
+        "What is BMR?",
+        "BMR",
+        "How does BMR work?",
+        "Can you explain BMR?",
+        "What is Basal Metabolic Rate?"
+      ],
+      "responses": [
+        "BMR stands for Basal Metabolic Rate, it is the amount of energy your body requires to perform its basic functions when at rest.",
+        "It is important to know your BMR in order to make informed decisions about your diet and exercise routine."
+      ]
+    },
+    {
+      "tag": "BMR_calculation",
+      "patterns": [
+        "How do you calculate BMR?",
+        "What is BMR formula?",
+        "What is BMR calculation?",
+        "How do you calculate BMR?",
+        "What is BMR formula?",
+        "What is BMR calculation?"
+      ],
+      "responses": [
+        "BMR, or Basal Metabolic Rate, is the amount of energy required by the body to maintain its basic functions such as breathing and heartbeat, when at rest. It is typically calculated using the following formula: \n\nFor men: BMR = 66 + (13.7 x weight in kg) + (5 x height in cm) - (6.8 x age in years)\n\nFor women: BMR = 655 + (9.6 x weight in kg) + (1.8 x height in cm) - (4.7 x age in years)\n\nNote that these formulas are based on the Harris-Benedict equations, which are widely used but do not provide an exact measurement of an individual's BMR.",
+        "To calculate your BMR, you need to know your weight, height, and age. Once you have this information, you can plug it into the appropriate formula. BMR is typically calculated in kilocalories per day, which represents the amount of energy required to keep your body functioning at rest."
+      ]
+    },
+    {
+      "tag": "BMI_Information",
+      "patterns": [
+        "What is BMI?",
+        "BMI",
+        "How does BMI work?",
+        "Can you explain BMI?",
+        "What is BMI calculation?",
+        "How do you calculate BMI?",
+        "What is BMI formula?",
+        "What is Body mass index?"
+      ],
+      "responses": [
+        "BMI stands for Body Mass Index, it is a numerical value of a person's weight in relation to their height.",
+        "BMI is calculated by dividing a person's weight in kilograms by the square of their height in meters.",
+        "BMI is used as a simple method to assess whether a person is underweight, normal weight, overweight, or obese. It is important to note that BMI may not always accurately reflect a person's body composition and health status.",
+        "BMI is a simple method to assess whether a person is underweight, normal weight, overweight, or obese. It is important to note that BMI may not always accurately reflect a person's body composition and health status.",
+        "bmi = weight (kg) / height (m) ^ 2",
+        "BMI is calculated by dividing a person's weight in kilograms by the square of their height in meters."
+      ]
+    },
+    {
+      "tag": "BMI_calculation",
+      "patterns": [
+        "How do you calculate BMI?",
+        "What is BMI formula?",
+        "What is BMI calculation?",
+        "How to calculate Body Mass Index?"
+      ],
+      "responses": [
+        "BMI, or Body Mass Index, is a measure of body fat based on height and weight. It is calculated using the following formula: \n\nBMI = weight (kg) / height (m)^2\n\nFor example, if someone weighs 70 kg and is 1.75 m tall, their BMI would be calculated as follows: \n\n70 / (1.75)^2 = 70 / 3.06 = 22.9\n\nThis number is then compared to a set of standardized categories to determine if an individual is underweight, normal weight, overweight, or obese.",
+        "BMI is calculated by dividing a person's weight in kilograms by their height in meters squared. For example, if someone weighs 70 kg and is 1.75 m tall, their BMI would be calculated as follows: \n\n70 / (1.75)^2 = 70 / 3.06 = 22.9\n\nThis number is then compared to a set of standardized categories to determine if an individual is underweight, normal weight, overweight, or obese."
+      ]
+    },
+    {
+      "tag": "TDEE_Information",
+      "patterns": [
+        "What is TDEE?",
+        "TDEE",
+        "How does TDEE work?",
+        "Can you explain TDEE?",
+        "What is TDEE calculation?",
+        "How do you calculate TDEE?",
+        "What is TDEE formula?"
+      ],
+      "responses": [
+        "TDEE stands for Total Daily Energy Expenditure, it is the total amount of energy you burn in a day from performing all activities, including basic functions and physical activity.",
+        "Knowing your TDEE is important for understanding the amount of calories you need to consume in order to maintain, gain, or lose weight.",
+        "TDEE calculation involves determining your Basal Metabolic Rate (BMR), which is the amount of energy your body requires to function at rest, and then multiplying it by a physical activity factor.",
+        "TDEE is calculated by multiplying your BMR by a physical activity factor. The physical activity factor is a multiplier that represents your level of physical activity. The higher the physical activity factor, the more calories you burn."
+      ]
+    },
+
+    {
+      "tag": "Drug_Interaction_Checker",
+      "patterns": [
+        "Can you check for drug interactions?",
+        "What happens if I take these drugs together?",
+        "Can you check for drug interactions and provide information on any potential risks or side effects of taking certain drugs together?",
+        "is this website has a tool that can check for drug interactions?"
+      ],
+      "responses": [
+        "Yes, this website has a tool that can check for drug interactions. The results can be translated using Google Translate and can be printed out.",
+        "This website has a tool that can check for drug interactions and provide information on any potential risks or side effects of taking certain drugs together."
+      ]
+    },
+    {
+      "tag": "Drug_Information",
+      "patterns": [
+        "What information can you provide on drugs?",
+        "Can you give information on a specific drug?"
+      ],
+      "responses": [
+        "This website provides information on various drugs, including their uses, dosage, side effects, and precautions.",
+        "Yes, this website can provide information on a specific drug you are interested in."
+      ]
+    },
+    {
+      "tag": "Covid_19_Table",
+      "patterns": [
+        "Can you show me a table of Covid-19 cases?",
+        "Do you have information on Covid-19 cases?"
+      ],
+      "responses": [
+        "Yes, this website has a table that provides information on the number of Covid-19 cases globally, as well as charts that visualize the data.",
+        "This website provides information on Covid-19 cases in the form of a table and charts, giving you a comprehensive understanding of the situation."
+      ]
+    },
+    {
+      "tag": "website_information",
+      "patterns": [
+        "What is this website?",
+        "What is this website for?",
+        "What is this website about?",
+        "What is this website's purpose?",
+        "What is this website's goal?",
+        "What is this website's objective?",
+        "What is this website's aim?"
+      ],
+      "responses": [
+        "This website is a comprehensive health and wellness tool that includes features such as a drug interaction checker, drug information, COVID-19 table with charts, Body Mass Index (BMI) calculator, Basal Metabolic Rate (BMR) calculator, and a pharmacy locator.",
+        "The aim of this website is to provide users with accurate information and tools related to their health and wellness, including the ability to calculate their BMI and BMR, find information on drugs and drug interactions, stay up to date with COVID-19 information and find nearby pharmacies.",
+        "This website offers a variety of health and wellness resources, including calculators for BMI and BMR, a drug interaction checker, information on various drugs, a COVID-19 table with charts, and a pharmacy locator to help you find nearby pharmacies."
+      ]
+    },
+    {
+      "tag": "isn't",
+      "patterns": ["this isn't working"],
+      "responses": [
+        "For a real assistant please call 1-800-HELPME",
+        "Same-day clinic evaluation please call 1-800-HELPME"
+      ]
+    },
+    {
+      "tag": "hypertensive disease",
+      "patterns": [
+        "pain chest",
+        "shortness of breath",
+        "dizziness",
+        "asthenia",
+        "fall",
+        "syncope",
+        "vertigo",
+        "sweat",
+        "sweating increased",
+        "palpitation",
+        "nausea",
+        "angina pectoris",
+        "pressure chest"
+      ],
+      "responses": ["It looks like you may have hypertensive disease"]
+    },
+    {
+      "tag": "diabetes",
+      "patterns": [
+        "polyuria",
+        "polydypsia",
+        "shortness of breath",
+        "pain chest",
+        "asthenia",
+        "nausea",
+        "orthopnea",
+        "rale",
+        "sweat",
+        "sweating increased",
+        "unresponsiveness",
+        "mental status changes",
+        "vertigo",
+        "vomiting",
+        "labored breathing"
+      ],
+      "responses": [
+        "It looks like you may have diabetes",
+        "in polycystic ovaries the hormone dis-balance is such that there are long intervals in between two periods. relax deranged sugar levels are common in pcod but that does not mean that you would have diabetes in future. metformin is commonly prescribed in case of pcod. doing some lifestyle changes will help you like- 1. reduce saturated fat intake. 2. maintain good body composition. 3. increase dietary fiber. 4. increase aerobic exercise. 5. restrict sugar intake. you can also consider visiting a dietician who can help you in diet according to your requirements and choice. take care!"
+      ]
+    },
+    {
+      "tag": "depressive disorder",
+      "patterns": [
+        "feeling suicidal",
+        "suicidal",
+        "hallucinations auditory",
+        "feeling hopeless",
+        "weepiness",
+        "sleeplessness",
+        "motor retardation",
+        "irritable mood",
+        "blackout",
+        "mood depressed",
+        "hallucinations visual",
+        "worry",
+        "agitation",
+        "tremor",
+        "intoxication",
+        "verbal auditory hallucinations",
+        "energy increased",
+        "difficulty",
+        "nightmare",
+        "unable to concentrate",
+        "homelessness"
+      ],
+      "responses": ["It looks like you may have depression mental"]
+    },
+    {
+      "tag": "coronary arteriosclerosis",
+      "patterns": [
+        "pain chest",
+        "angina pectoris",
+        "shortness of breath",
+        "hypokinesia",
+        "sweat",
+        "sweating increased",
+        "pressure chest",
+        "dyspnea on exertion",
+        "orthopnea",
+        "chest tightness"
+      ],
+      "responses": ["It looks like you may have coronary arteriosclerosis"]
+    },
+    {
+      "tag": "pneumonia",
+      "patterns": [
+        "cough",
+        "fever",
+        "decreased translucency",
+        "shortness of breath",
+        "rale",
+        "productive cough",
+        "pleuritic pain",
+        "yellow sputum",
+        "breath sounds decreased",
+        "chill",
+        "rhonchus",
+        "green sputum",
+        "non-productive cough",
+        "wheezing",
+        "haemoptysis",
+        "distress respiratory",
+        "tachypnea",
+        "malaise",
+        "night sweat"
+      ],
+      "responses": ["It looks like you may have pneumonia"]
+    },
+    {
+      "tag": "failure heart congestive",
+      "patterns": [
+        "shortness of breath",
+        "orthopnea",
+        "jugular venous distention",
+        "rale",
+        "dyspnea",
+        "cough",
+        "wheezing"
+      ],
+      "responses": ["It looks like you may have failure heart congestive"]
+    },
+    {
+      "tag": "accident cerebrovascular",
+      "patterns": [
+        "dysarthria",
+        "asthenia",
+        "speech slurred",
+        "facial paresis",
+        "hemiplegia",
+        "unresponsiveness",
+        "seizure",
+        "numbness"
+      ],
+      "responses": ["It looks like you may have accident cerebrovascular"]
+    },
+    {
+      "tag": "asthma",
+      "patterns": [
+        "wheezing",
+        "cough",
+        "shortness of breath",
+        "chest tightness",
+        "non-productive cough",
+        "pleuritic pain",
+        "productive cough",
+        "symptom aggravating factors",
+        "distress respiratory"
+      ],
+      "responses": ["It looks like you may have asthma"]
+    },
+    {
+      "tag": "myocardial infarction",
+      "patterns": [
+        "pain chest",
+        "st segment elevation",
+        "sweat",
+        "sweating increased",
+        "shortness of breath",
+        "st segment depression",
+        "hypokinesia",
+        "angina pectoris",
+        "pressure chest",
+        "t wave inverted",
+        "orthopnea",
+        "rale",
+        "chest tightness",
+        "presence of q wave",
+        "palpitation",
+        "dyspnea",
+        "chest discomfort",
+        "bradycardia",
+        "syncope"
+      ],
+      "responses": ["It looks like you may have myocardial infarction"]
+    },
+    {
+      "tag": "hypercholesterolemia",
+      "patterns": [
+        "pain",
+        "pain chest",
+        "sweat",
+        "sweating increased",
+        "nonsmoker",
+        "pressure chest",
+        "syncope",
+        "numbness",
+        "chest discomfort",
+        "shortness of breath",
+        "st segment depression",
+        "worry",
+        "t wave inverted",
+        "bradycardia",
+        "dyspnea"
+      ],
+      "responses": ["It looks like you may have hypercholesterolemia"]
+    },
+    {
+      "tag": "infection",
+      "patterns": [
+        "fever",
+        "erythema",
+        "decreased translucency",
+        "hepatosplenomegaly",
+        "chill",
+        "pruritus",
+        "diarrhea",
+        "abscess bacterial",
+        "swelling",
+        "pain",
+        "apyrexial",
+        "cough"
+      ],
+      "responses": [
+        "It looks like you may have infection",
+        "it seems you are suffering from reflux and gastritis which is a common issue after gall bladder removal. regarding the abnormal feeling it requires a clinical examination to comment regarding the exact cause. it might be that the incision site is healing which can cause some hardening of the involved and surrounding region. the simple measures that are likely to help you are- 1. certain foods such as cauliflower broccoli cabbage brussels sprouts and legumes (beans) may cause bloating and gassiness. 2. dietary fiber may lessen symptoms. you should drink plenty of water and avoid soda which may cause gas and abdominal discomfort. 3. you can use some over the counter drugs like pepto bismol or tums for symptomatic relief. consider visiting the treating surgeon once for evaluation. take care!"
+      ]
+    },
+    {
+      "tag": "infection urinary tract",
+      "patterns": [
+        "fever",
+        "dysuria",
+        "hematuria",
+        "renal angle tenderness",
+        "lethargy",
+        "asthenia",
+        "hyponatremia",
+        "hemodynamically stable",
+        "distress respiratory",
+        "difficulty passing urine",
+        "mental status changes",
+        "consciousness clear"
+      ],
+      "responses": ["It looks like you may have infection urinary tract"]
+    },
+    {
+      "tag": "anemia",
+      "patterns": [
+        "chill",
+        "guaiac positive",
+        "monoclonal",
+        "ecchymosis",
+        "tumor cell invasion",
+        "haemorrhage",
+        "pallor",
+        "asthenia",
+        "fatigue",
+        "heme positive",
+        "pain back",
+        "orthostasis",
+        "hyponatremia",
+        "dizziness",
+        "shortness of breath",
+        "pain",
+        "rhonchus",
+        "arthralgia",
+        "swelling",
+        "transaminitis"
+      ],
+      "responses": [
+        "It looks like you may have anemia",
+        "the normal level of vitamin b12 in the blood is 200-1000ng/l. the levels of methylmalonic acid are generally high during anemia due to a lack of vitamin b12 or folic acid. methylmalonic acid can also be checked with a urine test. most hmos cover diagnostic services when medically necessary and prescribed by a participating physician. check with your insurance provider for more detailed information about your coverage.",
+        "with every thing normal i dont think its is lupus and fibromyalgia fits the description. supportive care with pain killers is advised. low doses of tricyclic antidepressants work like charm. i hope it helps. stay in touch with your healthcare provider for further guidance as our answers are just for education and counselling purposes and cannot be an alternative to actual visit to a doctor. take care khan"
+      ]
+    },
+    {
+      "tag": "chronic obstructive airway disease",
+      "patterns": [
+        "shortness of breath",
+        "wheezing",
+        "cough",
+        "dyspnea",
+        "distress respiratory",
+        "sputum purulent",
+        "hypoxemia",
+        "hypercapnia",
+        "patient non compliance",
+        "chest tightness"
+      ],
+      "responses": [
+        "It looks like you may have chronic obstructive airway disease"
+      ]
+    },
+    {
+      "tag": "dementia",
+      "patterns": [
+        "fever",
+        "fall",
+        "unresponsiveness",
+        "lethargy",
+        "agitation",
+        "ecchymosis",
+        "syncope",
+        "rale",
+        "unconscious state",
+        "cough",
+        "bedridden",
+        "bedridden",
+        "pain",
+        "facial paresis",
+        "abdominal tenderness",
+        "rhonchus",
+        "unsteady gait",
+        "hallucinations auditory"
+      ],
+      "responses": ["It looks like you may have dementia"]
+    },
+    {
+      "tag": "insufficiency renal",
+      "patterns": [
+        "shortness of breath",
+        "hyperkalemia",
+        "orthopnea",
+        "rale",
+        "urgency of micturition",
+        "ascites",
+        "guaiac positive",
+        "asthenia",
+        "apyrexial",
+        "mental status changes",
+        "dyspnea",
+        "difficulty",
+        "diarrhea",
+        "hypotension",
+        "breath sounds decreased",
+        "swelling",
+        "hypokinesia"
+      ],
+      "responses": ["It looks like you may have insufficiency renal"]
+    },
+    {
+      "tag": "confusion",
+      "patterns": [
+        "seizure",
+        "enuresis",
+        "lethargy",
+        "speech slurred",
+        "fall",
+        "consciousness clear",
+        "mental status changes",
+        "asterixis",
+        "unconscious state",
+        "agitation",
+        "muscle twitch",
+        "asthenia",
+        "sleepy",
+        "dizziness",
+        "headache",
+        "dysarthria",
+        "lightheadedness",
+        "tremor",
+        "hyponatremia",
+        "unresponsiveness"
+      ],
+      "responses": ["It looks like you may have confusion"]
+    },
+    {
+      "tag": "degenerative polyarthritis",
+      "patterns": [
+        "pain",
+        "food intolerance",
+        "numbness of hand",
+        "general discomfort",
+        "drowsiness",
+        "asthenia",
+        "nonsmoker",
+        "non-productive cough",
+        "polydypsia",
+        "stiffness",
+        "unsteady gait"
+      ],
+      "responses": ["It looks like you may have degenerative polyarthritis"]
+    },
+    {
+      "tag": "hypothyroidism",
+      "patterns": [
+        "shortness of breath",
+        "prostatism",
+        "drowsiness",
+        "sleepy",
+        "hyponatremia",
+        "fall",
+        "unsteady gait",
+        "polyuria",
+        "hypotension",
+        "difficulty",
+        "syncope",
+        "nightmare",
+        "speech slurred",
+        "weight gain",
+        "asthenia",
+        "fatigue",
+        "tired",
+        "agitation",
+        "mental status changes",
+        "motor retardation",
+        "vomiting",
+        "numbness",
+        "mass of body structure"
+      ],
+      "responses": ["It looks like you may have hypothyroidism"]
+    },
+    {
+      "tag": "anxiety state",
+      "patterns": [
+        "worry",
+        "feeling suicidal",
+        "suicidal",
+        "sleeplessness",
+        "feeling hopeless",
+        "irritable mood",
+        "tremor",
+        "blackout",
+        "weepiness",
+        "has religious belief",
+        "nervousness",
+        "hallucinations visual",
+        "formication",
+        "difficulty",
+        "pain chest",
+        "patient non compliance",
+        "agitation",
+        "palpitation",
+        "hallucinations auditory",
+        "mood depressed",
+        "hot flush",
+        "pain",
+        "consciousness clear",
+        "nightmare"
+      ],
+      "responses": ["It looks like you may have anxiety state"]
+    },
+    {
+      "tag": "malignant neoplasms",
+      "patterns": [
+        "pain",
+        "mass of body structure",
+        "lesion",
+        "cushingoid facies",
+        "cushingoid habitus",
+        "emphysematous change",
+        "decreased body weight",
+        "ascites",
+        "hoarseness",
+        "thicken",
+        "hematuria"
+      ],
+      "responses": ["It looks like you may have malignant neoplasms"]
+    },
+    {
+      "tag": "primary malignant neoplasm",
+      "patterns": [
+        "pain",
+        "mass of body structure",
+        "lesion",
+        "cushingoid facies",
+        "cushingoid habitus",
+        "emphysematous change",
+        "decreased body weight",
+        "ascites",
+        "hoarseness",
+        "thicken",
+        "hematuria"
+      ],
+      "responses": ["It looks like you may have malignant neoplasms"]
+    },
+    {
+      "tag": "acquired immuno-deficiency syndrome",
+      "patterns": [
+        "fever",
+        "night sweat",
+        "spontaneous rupture of membranes",
+        "cough",
+        "decreased body weight",
+        "chill",
+        "diarrhea",
+        "pleuritic pain",
+        "patient non compliance",
+        "tachypnea",
+        "productive cough",
+        "muscle hypotonia",
+        "hypotonic",
+        "feeling suicidal"
+      ],
+      "responses": [
+        "It looks like you may have acquired immuno-deficiency syndrome"
+      ]
+    },
+    {
+      "tag": "HIV",
+      "patterns": [
+        "fever",
+        "night sweat",
+        "spontaneous rupture of membranes",
+        "cough",
+        "decreased body weight",
+        "chill",
+        "diarrhea",
+        "pleuritic pain",
+        "patient non compliance",
+        "tachypnea",
+        "productive cough",
+        "muscle hypotonia",
+        "hypotonic",
+        "feeling suicidal"
+      ],
+      "responses": [
+        "It looks like you may have acquired immuno-deficiency syndrome"
+      ]
+    }
+  ]
+}
