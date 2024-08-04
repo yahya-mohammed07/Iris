@@ -1,6 +1,6 @@
 cppyy==2.4.2
 Flask==2.2.5
-keras==2.11.0
+keras==2.13.1
 nltk==3.8.1
 numpy==1.24.1
 tensorflow==2.13.0
